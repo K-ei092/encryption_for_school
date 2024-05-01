@@ -34,10 +34,10 @@ class MainWindow(QMainWindow):
         # Создаем горизонтальный layout для кнопок
         button_layout = QHBoxLayout()
         # Кнопка для зашифровки текста
-        self.encrypt_button = QPushButton("Зашифроавть")
+        self.encrypt_button = QPushButton("Зашифровать")
         self.encrypt_button.clicked.connect(lambda: self.encrypt_text("en"))
         # Кнопка для расшифровки текста
-        self.decrypt_button = QPushButton("Расшифроавть")
+        self.decrypt_button = QPushButton("Расшифровать")
         self.decrypt_button.clicked.connect(lambda: self.encrypt_text("de"))
         # Добавляем кнопки в горизонтальный layout
         button_layout.addWidget(self.encrypt_button)
